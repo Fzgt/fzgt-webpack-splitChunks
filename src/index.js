@@ -3,3 +3,4 @@ import data from './data.js'
 import $ from 'jquery'
 
 console.log($)
+console.log(data, 'index.js')
