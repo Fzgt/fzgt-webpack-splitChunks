@@ -1,8 +1,8 @@
 module.exports = {
-    entry: {
-        main: './src/index.js',
-        app: './src/app.js'
-    },
+    // entry: {
+    //     main: './src/index.js',
+    //     app: './src/app.js'
+    // },
 
     optimization: {
         runtimeChunk: {
