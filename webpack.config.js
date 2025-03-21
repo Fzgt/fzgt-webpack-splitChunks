@@ -1,3 +1,5 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 module.exports = {
     // entry: {
     //     main: './src/index.js',
@@ -10,7 +12,14 @@ module.exports = {
         },
         splitChunks: {
             chunks: 'all',
-            cacheGroups: {},
+            cacheGroups: {
+                // commons: {
+                //     chunks: 'all',
+                //     name: 'chunk-commons',
+                //     minChunks: 2,
+                //     requestExistingChunk: true,
+                // }
+            },
             // minSize: {
             //     javascript: 30000,
             //     style: 0
@@ -21,4 +30,8 @@ module.exports = {
             // }
         },
     },
+
+    plugins: [
+        new BundleAnalyzerPlugin()
+    ]
 }; 

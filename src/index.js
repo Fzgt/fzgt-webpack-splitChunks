@@ -8,3 +8,7 @@ console.log(data, 'index.js')
 import('./data').then(data => {
     console.log('data:', data);
 })
+
+import('./data2').then(data => {
+    console.log('data2:', data);
+})
